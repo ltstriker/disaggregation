@@ -1,13 +1,13 @@
 
 cd ~
 #install numpy
-apt-get update
-apt install python-pip
-python -m pip install --upgrade pip -y
-pip install numpy -y
+sudo apt-get update
+sudo apt install python-pip
+sudo python -m pip install --upgrade pip
+sudo pip install numpy -y
 
 #install java
-sudo apt-get install openjdk-8-jdk -y
+sudo apt-get install openjdk-8-jdk
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
 
 
