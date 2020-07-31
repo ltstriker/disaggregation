@@ -4,7 +4,7 @@ cd ~
 sudo apt-get update
 sudo apt install python-pip
 sudo python -m pip install --upgrade pip
-sudo pip install numpy -y
+sudo pip install numpy
 
 #install java
 sudo apt-get install openjdk-8-jdk
