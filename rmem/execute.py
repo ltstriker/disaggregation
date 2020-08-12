@@ -344,15 +344,16 @@ def sync_rmem_code():
   slaves_run("cd /root/disaggregation/rmem; make clean; make")
 
 def mkfs_xvdc_ext4():
-  dev = ""
-  devs = ["xvdc", "xvdf"]
-  for d in devs:
-    if d in os.popen("ls /dev/%s" % d).read():
-      dev = d
-      break
-  if dev == "":
-    assert(False)
-  all_run("umount /mnt2;mkfs.ext4 /dev/%s; mount /dev/%s /mnt2" % (dev, dev))
+  # dev = ""
+  # devs = ["xvdc", "xvdf"]
+  # for d in devs:
+  #   if d in os.popen("ls /dev/%s" % d).read():
+  #     dev = d
+  #     break
+  # if dev == "":
+  #   assert(False)
+  # all_run("umount /mnt2;mkfs.ext4 /dev/%s; mount /dev/%s /mnt2" % (dev, dev))
+  all_run("rm -rf /mnt2;mkdir /mnt2")
   
 
 def update_hadoop_conf():
