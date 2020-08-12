@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #remote_mem bw latency inject get_record
 
 

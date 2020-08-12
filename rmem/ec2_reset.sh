@@ -1,3 +1,4 @@
+#!/bin/bash
 #reset.sh <remote_mem> <bw> <latency> <inject> <get_record>
 
 if [ -n "$(cat /proc/swaps | grep /mnt/swap)" ]

@@ -1,3 +1,4 @@
+#!/bin/bash
 SLAVES=`cat /root/spark-ec2/slaves`
 
 for slave in $SLAVES; do

@@ -9,7 +9,7 @@ def banner(content):
 
 def run(cmd):
   print "###Running local cmd:" + cmd
-  os.system("source ~/.bash_profile; %s" % cmd)
+  os.system("#!/bin/bash; source ~/.bash_profile; %s" % cmd)
 
 def run_and_get(cmd):
   return commands.getstatusoutput(cmd)

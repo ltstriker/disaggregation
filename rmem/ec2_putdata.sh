@@ -1,3 +1,5 @@
+#!/bin/bash
+
 /root/tachyon/bin/tachyon-stop.sh
 mount /dev/xvdg /root/ssd
 /root/ephemeral-hdfs/bin/hadoop dfsadmin -safemode leave

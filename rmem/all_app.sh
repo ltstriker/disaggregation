@@ -1,3 +1,5 @@
+#!/bin/bash
+
 for app in wordcount wordcount-hadoop terasort terasort-spark graphlab memcached memcached-local bdb timely
 do
   echo "~~~~~~~~app $app~~~~~~~"

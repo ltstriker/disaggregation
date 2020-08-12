@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd /root/disaggregation/rmem/
 echo 0 > .app_running.tmp
 if [ -a rmem_log.txt ]

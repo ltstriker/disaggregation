@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd /root/disaggregation/rmem
 
 bws=( 100000000000 40000000000 10000000000 )
